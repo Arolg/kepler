@@ -1,0 +1,18 @@
+# ninja log v5
+3	273	6734758190563692	build.ninja	13b8ca38b8542257
+110	2468	6737462713109808	tests/CMakeFiles/run_test_kepler.dir/test_kepler.cpp.obj	9267ec7f1ab60a0
+30	1341	6731378837941456	tests/googletest-master/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	9f7f90896fb4ae31
+4180	4710	6737475332871155	src/libmy_project.a	c18056a210b6d5ed
+4	93	6731389140484371	src/CMakeFiles/my_project.dir/my_project/kepler.cpp.obj	663b6906d8a07210
+16	6414	6731378888477750	tests/googletest-master/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	56f45155a1313094
+6415	8357	6731378908165142	lib/libgtestd.a	a780baee9418b9d
+8357	8449	6731378909092678	lib/libgtest_maind.a	3fdfe280a54c7f4a
+4710	10651	6737475364961972	tests/run_test_kepler.exe	a64eb75c00787004
+91	2021	6737462707175650	src/CMakeFiles/my_project.dir/my_project/KeplState.cpp.obj	704cd9d54c482bc2
+29	4178	6737475326148880	src/CMakeFiles/my_project.dir/my_project/CartState.cpp.obj	d0dcdf940680dbff
+39	2053	6737462707474853	src/CMakeFiles/my_project.dir/my_project/State.cpp.obj	3631ea386293e380
+308	3360	6737481144084132	src/CMakeFiles/my_project.dir/my_project/KeplState.cpp.obj	704cd9d54c482bc2
+44	3396	6737481144383326	src/CMakeFiles/my_project.dir/my_project/State.cpp.obj	3631ea386293e380
+339	6584	6737481176657094	src/CMakeFiles/my_project.dir/my_project/CartState.cpp.obj	d0dcdf940680dbff
+6586	6968	6737481181304674	src/libmy_project.a	c18056a210b6d5ed
+6968	12549	6737481209082517	tests/run_test_kepler.exe	a64eb75c00787004
