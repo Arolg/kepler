@@ -76,12 +76,26 @@ KepState CartState::convert_to_kep(double delta_T) const{
 
 
     std::vector<double> Z_axis = {0,0,1};
-    std::vector<double> nodal_line = cross(Z_axis,h_vector /h);
+    std::vector<double> nodal_line = cross(Z_axis,h_vector);
+    double Omega;
+    if (nodal_line[1] >= 0) {
+        if (norm(nodal_line) > 0)
+            Omega = acos(nodal_line[0] / norm(nodal_line));
+        else
+            Omega = 0.0;
+    } else
+        Omega = 2 * M_PI - acos(nodal_line[0] / norm(nodal_line));
 
-
-    double Omega = std::atan2((ecc_vector / e)[2],- cross(h_vector / h,ecc_vector / e)[2]);
     double i = std::acos((h_vector / h)[2]);
-    double omega = std::atan2( (h_vector / h)[0],(h_vector / h)[1]);
+    double omega;
+    if (ecc_vector[2] >= 0) {
+        if (norm(nodal_line) > 0 && norm(ecc_vector) > 0)
+            omega = acos(ecc_vector * nodal_line / norm(ecc_vector) / norm(nodal_line));
+        else
+            omega = 0.0;
+    } else
+        omega = 2 * M_PI - acos(ecc_vector * nodal_line / norm(ecc_vector) / norm(nodal_line));
+
 
 
     double cos_e = 1./e * (p / this -> get_radius() - 1);

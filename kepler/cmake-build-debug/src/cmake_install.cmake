@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ismat/Desktop/kepler/src
+# Install script for directory: C:/Users/ismat/Desktop/repo/kepler/kepler/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
